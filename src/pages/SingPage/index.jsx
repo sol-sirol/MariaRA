@@ -36,9 +36,9 @@ const SingPage = () => {
   return (
     <Page noSwipeback>
       <Block className={style.contentTop}>
-        <Block className={style.textContainer}>
+        <div className={style.textContainer}>
           <p>Введтите свой номер телефона для отправки проверочного кода</p>
-        </Block>
+        </div>
       </Block>
       <Block>
         <div className={style.inputWrapper}>

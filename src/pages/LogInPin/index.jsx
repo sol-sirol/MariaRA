@@ -1,4 +1,4 @@
-import { Page, Block, Button, f7 } from "framework7-react";
+import { Page, Block, f7 } from "framework7-react";
 import { useEffect, useState } from "react";
 import style from "./index.module.css";
 
@@ -19,9 +19,9 @@ const PagePassword = () => {
   return (
     <Page>
       <Block className={style.contentTop}>
-        <Block className={style.textContainer}>
+        <div className={style.textContainer}>
           <p>Введите пин-код для входа</p>
-        </Block>
+        </div>
       </Block>
       <Block>
         <div className={style.inputWrapper}>

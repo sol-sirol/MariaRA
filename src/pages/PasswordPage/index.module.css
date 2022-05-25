@@ -28,6 +28,7 @@
   font-size: 2px !important;
 }
 .fieldWrapper {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;

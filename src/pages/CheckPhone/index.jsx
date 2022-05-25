@@ -81,8 +81,8 @@ const CheckPhone = () => {
             onClick={(e) => {
               console.log(Number(code));
               if (Number(code) === CODE) {
-                console.log("Complit", "go to /pagePassword");
-                f7.view.current.router.navigate("/pagePassword");
+                console.log("Complit", "go to /passwordPage");
+                f7.view.current.router.navigate("/passwordPage");
               } else {
                 setCode("");
                 setAttempts(attempts - 1);

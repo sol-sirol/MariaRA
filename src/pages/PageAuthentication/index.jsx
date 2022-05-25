@@ -1,5 +1,5 @@
-import { Page, Block, List, ListItem, Button, f7 } from "framework7-react";
-import { useEffect, useState } from "react";
+import { Page, Block, Button, f7 } from "framework7-react";
+import { useState } from "react";
 import style from "./index.module.css";
 
 const PageAuthentication = () => {
@@ -27,6 +27,7 @@ const PageAuthentication = () => {
             }}
           />
           <span>
+            {faceCheck === false && <span className="CheckCircle"></span>}
             {faceCheck && (
               <svg
                 width="25"
@@ -63,6 +64,7 @@ const PageAuthentication = () => {
             }}
           />
           <span>
+            {fingerCheck === false && <span className="CheckCircle"></span>}
             {fingerCheck && (
               <svg
                 width="25"
@@ -99,6 +101,7 @@ const PageAuthentication = () => {
             }}
           />
           <span>
+            {pinCheck === false && <span className="CheckCircle"></span>}
             {pinCheck && (
               <svg
                 width="25"
@@ -133,13 +136,46 @@ const PageAuthentication = () => {
           }
           onClick={() => {
             if (faceCheck) {
-              f7.view.current.router.navigate("/logInFace");
+              f7.view.current.router.navigate("/pageLog", {
+                props: {
+                  state: "face",
+                },
+              });
             } else if (fingerCheck) {
-              f7.view.current.router.navigate("/logInFinger");
+              f7.view.current.router.navigate("/pageLog", {
+                props: {
+                  state: "finger",
+                },
+              });
             } else if (pinCheck) {
-              f7.view.current.router.navigate("/logInPin");
+              f7.view.current.router.navigate("/logInPin", {
+                props: {
+                  state: "pin",
+                },
+              });
             }
           }}
+          // onClick={() => {
+          //   if (faceCheck) {
+          //     f7.view.current.router.navigate("/logInFace", {
+          //       props: {
+          //         foo: "bar",
+          //       },
+          //     });
+          //   } else if (fingerCheck) {
+          //     f7.view.current.router.navigate("/logInFinger", {
+          //       props: {
+          //         foo: "bar",
+          //       },
+          //     });
+          //   } else if (pinCheck) {
+          //     f7.view.current.router.navigate("/logInPin", {
+          //       props: {
+          //         foo: "bar",
+          //       },
+          //     });
+          //   }
+          // }}
         >
           Выбрать
         </Button>
