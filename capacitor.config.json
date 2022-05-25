@@ -1,0 +1,6 @@
+{
+  "appId": "com.exampel.app",
+  "appName": "MariaRA",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}

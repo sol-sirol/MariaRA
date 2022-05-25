@@ -1,0 +1,7 @@
+.splashLogo {
+  height: 100vh;
+  margin: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

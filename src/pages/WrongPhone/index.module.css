@@ -1,0 +1,50 @@
+.head {
+  padding-top: 40px !important;
+  margin: 0 !important;
+  height: 19vh;
+}
+.textWrapper {
+  margin: 0 !important;
+  height: 24vh;
+}
+.form {
+  margin: 0 !important;
+  height: 43vh;
+}
+.footer {
+  margin: 0 !important;
+  height: 12vh;
+}
+
+.text {
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 160%;
+  letter-spacing: -0.02em;
+  color: #333333;
+}
+.textPhone {
+  padding-top: 8px;
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 125%;
+  letter-spacing: -0.6px;
+  color: #000000;
+}
+.footerButton {
+  color: #fff !important;
+  background: linear-gradient(
+    92.06deg,
+    #a9f879 -26.92%,
+    #75e431 -0.5%,
+    #44c746 35.17%,
+    #00964e 97.92%
+  ) !important
+  ;
+}
